@@ -4,10 +4,10 @@ from aiogram.types import ReplyKeyboardRemove, \
 
 kb = ReplyKeyboardMarkup(resize_keyboard = True, row_width=2, one_time_keyboard=False)
 kb_ban = ReplyKeyboardMarkup(resize_keyboard = True, row_width=2, one_time_keyboard=False)
-button = KeyboardButton('Игры 🎮')
-button1 = KeyboardButton('Профиль 👨‍💻 ')
+button = KeyboardButton('Ігри 🎮')
+button1 = KeyboardButton('Профіль 👨‍💻 ')
 button2 = KeyboardButton('FAQ 📖')
-button3 = KeyboardButton('Поддержка 🛎')
+button3 = KeyboardButton('Підтримка 🛎')
 ban_button = KeyboardButton('🚫')
 kb.add(button,button1,button2,button3)
 kb_ban.add(ban_button)
