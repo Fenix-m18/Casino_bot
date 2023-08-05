@@ -1,6 +1,6 @@
 #Трогать, значения можно менять
 admin = [1825534107] #ID админа
-support_name = 'https://t.me/azimut_support_bot' #Имя саппорта, будет выводиться при нажатии кнопки "поддержка"
+support_name = '@azimut_support_bot' #Имя саппорта, будет выводиться при нажатии кнопки "поддержка"
 token = '6344190414:AAFQF2HcT8zMm-WeN9VxtJ4ZRzOe63XUylc' #Токен бота
 client_id = "" #client_id, получается при создании приложения Юмани
 number_qiwi = '+79218681790' #Номер вашего QIWI кошелька
