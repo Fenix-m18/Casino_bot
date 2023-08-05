@@ -159,7 +159,7 @@ async def text_handler(message, state: FSMContext):
 
             if ban != 1:
 
-                if msg == 'Игры 🎮':
+                if msg == 'Ігри 🎮':
 
                     url = 'https://telegra.ph/file/275afc68305449732ffe7.jpg'
                     text = 'Выберите игру 🎮'
@@ -176,7 +176,7 @@ async def text_handler(message, state: FSMContext):
                         await message.answer(f'{hide_link(url)}', parse_mode='HTML',
                                              reply_markup=games)
 
-                elif msg == 'Профиль 👨‍💻':
+                elif msg == 'Профіль 👨‍💻':
 
                     referals = cursor.execute('SELECT referals FROM users WHERE user_id = ?', (chat_id,)).fetchone()[0]
                     referal_level = cursor.execute('SELECT referal_level FROM users WHERE user_id = ?', (chat_id,)).fetchone()[0]
@@ -212,7 +212,7 @@ async def text_handler(message, state: FSMContext):
                                                f'🤖 Ваш ID: <b>{message.from_user.id}</b> \n \n💰 Ваш баланс: <b>{balance} 🪙</b>\n \n👥 Приглашено пользователей: <b>{referals}</b> \n \n🍬 Доход с рефералов: <b>{referal_profit}</b> | Уровень: <b>{referal_level}</b> \n \n🔗 Реферальная ссылка: \n \n <code>{ref}</code> - <b>кликни</b> {hide_link(url)}',
                                                reply_markup=user_profile, parse_mode="HTML")
 
-                elif msg == 'Поддержка 🛎':
+                elif msg == 'Підтримка 🛎':
 
                     url = 'https://telegra.ph/file/5579c411944bc187d554e.jpg'
 
